@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Média e Desvio Padrão</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Cálculo de Média e Desvio Padrão</h2>
+
+  <label for="quantidade">Quantos números você quer inserir?</label>
+  <input type="number" id="quantidade" min="1" />
+  <button onclick="criarCampos()">Confirmar</button>
+
+  <div id="numerosInput"></div>
+  <button onclick="calcular()" id="calcularBtn" style="display:none;">Calcular</button>
+
+  <div class="result" id="resultado"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
