@@ -45,11 +45,15 @@ function criarCampos() {
     }
   
     const desvioPadrao = Math.sqrt(somatorio / (n - 1)); // Desvio amostral
+
+    const variancia = Math.max(numeros) - Math.min(numeros); 
   
     const resultado = document.getElementById('resultado');
     resultado.innerHTML = `
       Média: ${media.toFixed(2)} <br>
-      Desvio Padrão: ${desvioPadrao.toFixed(2)}
+      Desvio Padrão: ${desvioPadrao.toFixed(2)} <br>
+      Variância: $variancia.toFixed(2)}
     `;
   }
+
   
